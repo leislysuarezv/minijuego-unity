@@ -120,4 +120,3 @@ public class ScoreManager : MonoBehaviour
             PhaseChanged.Invoke(CurrentPhase);
     }
 }
-

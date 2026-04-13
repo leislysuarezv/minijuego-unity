@@ -12,13 +12,13 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        if (!followPlayer || player == null) return;
+        if (!followPlayer) return;
 
-        float x = Mathf.Clamp(player.position.x, minX, maxX);
-
-        // 👇 mantenemos Y FIJO
-        transform.position = new Vector3(x, transform.position.y, -10);
+        transform.position = new Vector3(
+            player.position.x,
+            0,
+            -10
+        );
     }
 }
-
 

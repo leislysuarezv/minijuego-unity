@@ -9,4 +9,3 @@ public class AudioCatalog : ScriptableObject
     public AudioClip finishClip;
     public AudioClip resultsClip;
 }
-

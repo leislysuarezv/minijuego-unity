@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class DrawLine : MonoBehaviour
@@ -10,6 +10,10 @@ public class DrawLine : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
         line.positionCount = 0;
+
+        // 🔥 GROSOR DE LA LÍNEA
+        line.startWidth = 0.2f;
+        line.endWidth = 0.2f;
     }
 
     void OnEnable()
@@ -49,4 +53,3 @@ public class DrawLine : MonoBehaviour
         }
     }
 }
-

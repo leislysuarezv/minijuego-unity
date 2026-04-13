@@ -31,4 +31,3 @@ public class PlayerFollowMouse : MonoBehaviour
         transform.position = Vector2.Lerp(transform.position, worldPosition, speed * Time.deltaTime);
     }
 }
-
